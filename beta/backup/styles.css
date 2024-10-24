@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: rgb(43, 104, 132);
+}
+
+/* Contenedor para agrupar logo y categoría */
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+/* Logo de la empresa ocupa todo el espacio disponible */
+.logo-empresa {
+    position: relative;
+    flex-grow: 1;
+    max-width: calc(100% - 1x); /*espacio para el logo de la categoría */
+}
+
+/* Imagen del logo principal */
+.logo-empresa img {
+    width: auto;
+    height: auto;
+}
+
+/* Nombre del producto sobre el logo */
+.nombre-producto {
+    position: absolute;
+    top: 20%; /* Ajustar según la necesidad */
+    left: 5%; /* Ajustar según la necesidad */
+    font-size: 40pt;
+    color: white;
+    text-align: left;
+    z-index: 1; /* Para que aparezca encima del logo */
+}
+
+/* Logo de la categoría en la parte superior derecha */
+.categoria-producto {
+    width: auto; /* Ajustar según el tamaño del logo de la categoría */
+}
+
+.categoria-producto img {
+    width: 100%;
+    height: auto;
+}
+
+/* Main Content */
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.imagen-producto img {
+    width: 300px;
+}
+
+.descripcion-producto p {
+    font-size: 13px;
+    max-width: 300px;
+    padding: 10px;
+}
+
+/* Sidebar */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
+table {
+    width: 250px;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table th {
+    background-color: rgb(43, 104, 132);
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(43, 104, 132);
+    bottom: 0;
+    width: 100%;
+}
+
+.serial-producto {
+    text-align: right;
+    font-size: 12px;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    font-size: 0.9rem;
+    color:  rgb(43, 104, 132);
+    
+}
